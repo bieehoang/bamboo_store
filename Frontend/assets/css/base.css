@@ -1,164 +1,400 @@
-*{
-    box-sizing: inherit;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-:root{
-    --white-color: white;
-    --black-color: black;
-    --text-color: #333;
+:root {
+  --white-color: white;
+  --black-color: black;
+  --text-color: #333;
+  --font-12: 12px;
 }
 
-html{
-    font-size: 62.5%;
-    line-height: 1.2rem;
-    font-family: 'Roboto', sans-serif;
-    box-sizing: border-box;
-    display: block;
+html {
+  font-size: 62.5%;
+  line-height: 1.2rem;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+  display: block;
+  scroll-behavior: smooth;
 }
 
-.header{
-    position: fixed;
-    width: 100%;
-    z-index: 3;
-    display: block;
-    margin-top: 0;
-}
+/* Animation */
 
-.logo{
-    display: flex;
-    justify-content: center;
-    background-color: #fff;
-}
-
-.logo__img{
-    height: 12rem;
-    color: #fff;
-}
-
-.navbar{
-    background-color: rgb(0, 0, 0);
-}
-
-.menu{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    min-height: 100px;
-    position: relative;
-}
-
-.items__home{
-    font-weight: 500;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
     opacity: 1;
+  }
 }
 
-.items{
-    display: inline-block;
-    font-size: 16px;
-    padding: 0 10px;
-    text-transform: uppercase;
+@keyframes grownUp {
+  from {
+    transform: scale(var(--grown-From));
+  }
+  to {
+    transform: scale(var(--grown-To));
+  }
 }
 
-.items > a{
-    text-decoration: none;
-    color: #fff;
-    opacity: 0.7;
+/* CSS main */
+.main {
+  position: relative;
 }
 
-.menu__right li:hover .menu__sub{
-    display: flex;
-    opacity: 0.7;
+.header {
+  width: 100%;
+  z-index: 3;
+  display: block;
+  margin-top: 0;
 }
 
-.items:hover > a, p{
-    opacity: 1;
-    cursor: pointer;
-    display: block;
-    color: #ffd154;
+.logo {
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
 }
 
-/* .items:hover > .items__items{
-    opacity: 1;
-    cursor: pointer;
+.logo-img {
+  height: 12rem;
+  color: #fff;
+}
+
+.navbar {
+  background-color: rgb(0, 0, 0);
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 40px;
+}
+
+.items-home {
+  font-weight: 500;
+  opacity: 1;
+}
+
+.items {
+  display: inline-block;
+  font-size: 18px;
+  padding: 0 10px;
+  text-transform: uppercase;
+}
+
+.items > a {
+  text-decoration: none;
+  color: #fff;
+  opacity: 0.7;
+}
+
+.menu-right li:hover .menu-sub {
+  display: flex;
+  opacity: 0.7;
+}
+
+.items:hover > a {
+  opacity: 1;
+  cursor: pointer;
+  color: #ffd154;
+}
+
+.items .items-items {
+  font-size: 18px;
+  border: none;
+  outline: none;
+  color: white;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  background-color: inherit;
+  font-family: inherit;
+  opacity: 0.8;
+}
+
+.menu-sub {
+  border-radius: 10px;
+  background-color: #3d3d3d;
+  height: 400px;
+  position: absolute;
+  top: 162px;
+  width: 80%;
+  left: 10%;
+  padding: 10px;
+  z-index: 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-transform: uppercase;
+  text-align: start;
+}
+
+.menu-right .menu-sub {
+  display: none;
+}
+
+li:hover .menu-sub {
+  display: flex;
+}
+
+.display {
+  color: #ffd154 !important;
+}
+
+.menu-sub li p {
+  margin-left: 8px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: #ffd154;
+}
+
+.menu-sub li {
+  list-style-type: none;
+}
+
+.menu-sub ul li {
+  padding: 10px 0;
+  list-style: none;
+  color: #ffd154;
+  font-size: 18px;
+}
+
+.menu-sub ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  display: block;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.menu-sub ul li:hover a {
+  opacity: 0.2;
+}
+
+.container {
+  background-color: black;
+  width: 100%;
+}
+
+.img-main {
+  background-image: url(../img/patrolmanramseycounty1935-1635-7364-4013-1635169925.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-origin: border-box;
+  width: 98%;
+  padding-top: 60%;
+  position: relative;
+  margin: 0 auto;
+  background-color: black;
+}
+
+.modal {
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  animation: fadeIn linear 0.3s;
+  display: none;
+}
+
+.modal-overley {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 100%;
+  height: 100%;
+}
+
+.modal-body {
+  --grown-From: 0.7;
+  --grown-To: 1;
+  background-color: var(--white-color);
+  margin: auto;
+  position: relative;
+  border-radius: 5px;
+  animation: grownUp linear 0.2s;
+}
+
+/* Authen form */
+
+.items-signin {
+  outline: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.auth-form {
+  padding: 0 32px;
+}
+
+.modal-register {
+  padding: 0 32px;
+  display: none;
+}
+
+/* header auth-form */
+.auth-form__header {
+  display: flex;
+  /* Up, Right, Down, Right */
+  padding: 16px 0 6px 0;
+  justify-content: space-between;
+  font-size: 20px;
+  color: var(--black-color);
+}
+
+.auth-form__switch {
+  color: #f5401c;
+}
+
+.auth-form__switch:hover {
+  color: red;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+/* auth-form body */
+.auth-form__form {
+}
+
+.auth-form__group:focus {
+  border-color: #888;
+}
+
+.auth-form__group p {
+  padding: 5px 0 5px 0;
+  font-size: 12px;
+}
+
+.auth-form__group input {
+  height: 32px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+/* Right, Down, Full, color */
+.auth-form__group input:hover {
+  box-shadow: 0 0 5px #3d3d3d;
+}
+
+.auth-form__aside {
+  padding: 32px 0;
+
+  font-size: var(--font-12);
+  text-align: center;
+}
+
+.auth-form__policy-text a {
+  text-decoration: none;
+  color: #f5401c;
+}
+
+/* auth form click */
+.auth-form__controls {
+  display: flex;
+  justify-content: space-around;
+  font-size: var(--font-12);
+  margin-top: 80px;
+}
+
+.auth-form__controls button {
+  border: none;
+  margin: 0;
+  padding: 10px 10px;
+  overflow: visible;
+  outline: none;
+  font-size: 15px;
+  border-radius: 3px;
+}
+
+.auth-form__controls button:hover {
+  opacity: 0.9;
+}
+
+.btn {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 4px;
+  background-color: transparent;
+  cursor: pointer;
+  font-weight: 500;
+  outline: none;
+  border: 1px solid var(--color);
+  font-size: 16px;
+  position: relative;
+  isolation: isolate;
+  margin: 0 5px;
+}
+
+.btn:before {
+  content: '';
+  height: 100%;
+  width: 0;
+  position: absolute;
+  border-radius: 4px;
+  top: 0;
+  left: 0;
+  background-color: var(--color);
+  z-index: -1;
+  transition: width 0.25s ease-in;
+}
+.btn:hover::before {
+  width: 100%;
+}
+
+.btn-primary {
+  --color: #f5401c;
+  background-color: rgba(29, 27, 27, 0.2);
+
+  color: #333;
+}
+
+.btn-back {
+  color: #333;
+}
+
+/* Auth form footer */
+.auth-form__socials {
+  display: flex;
+  padding: 24px 0 24px 0;
+  justify-content: space-between;
+}
+
+.auth-form__socials a {
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.btn-facebook {
+  --color: #278eee;
+}
+.btn-facebook a {
+  color: black;
+  font-size: 16px;
+}
+
+.btn-google {
+  --color: #f3aa97;
+}
+
+.btn-google a {
+  color: black;
+  font-size: 16px;
+}
+
+.btn-icon {
+  font-size: 16px;
+}
+
+.active {
+  display: flex;
+}
+
+/* .un-active {
+  display: none;
 } */
-
-.items .items__items{
-    font-size: 16px;  
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-    opacity: 0.8;
-}
-
-.menu__sub{
-    background-color:#3d3d3d;
-    height: 40rem;
-    position: absolute;
-    bottom: -400px;
-    width: 80%;
-    padding: 0;
-    left: 125px;
-    z-index: 2;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    text-transform: uppercase;
-}
-
-.menu__right .menu__sub{
-    display: none;
-}
-
-li:hover .menu__sub{
-    display: flex;
-}
-
-
-.menu__sub--top,
-.menu__sub--bottom,
-.menu__sub--accessary,
-li
-{
-    padding: 10px 0;
-    list-style: none;
-    color: #ffd154;
-    font-size: 18px;
-}
-
-.menu__sub--top li a,
-.menu__sub--bottom li a,
-.menu__sub--accessary li a{
-    color: #fff;
-    text-decoration: none;
-    font-size: 14px;
-    display: block;
-    padding: 10px 0;
-}
-
-.menu__sub--top,
-.menu__sub--bottom,
-.menu__sub--accessary,
-li a:hover{
-    opacity: 1;
-}
-
-.container{
-    background-color: black;
-}
-
-.img__main{
-    background-image: url(../img/patrolmanramseycounty1935-1635-7364-4013-1635169925.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-origin: border-box;
-    width: 98%;
-    padding-top: 60%;
-    position: relative;
-    margin: 0 auto;
-    background-color: black;
-}
-
