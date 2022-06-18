@@ -63,13 +63,13 @@ const switchAuthModalBtn = $('.auth-form__switch');
 const loginForm = $('.auth-form');
 const registerForm = $('.modal-register');
 const creatAccount = $('.js-creat-account');
+const dataPost = 'http://localhost:3000/songs';
 
 //check
-
+console.log(authFormOverleyAuth);
 // func
 function openModalAuth() {
   modalFormAuth.classList.add('active');
-  //   loginForm.classList.add('active');
 }
 
 function closeModalAuth() {
@@ -79,9 +79,6 @@ function closeModalAuth() {
 function switchAuthModal() {
   if ((loginForm.style.display = 'none')) {
     registerForm.classList.add('active');
-  }
-  if ((registerForm.style.display = 'flex')) {
-    loginForm.style.display = 'none';
   }
 }
 
@@ -95,3 +92,16 @@ backBtnAuth.addEventListener('click', closeModalAuth); // click back button to c
 switchAuthModalBtn.addEventListener('click', switchAuthModal);
 
 creatAccount.addEventListener('click', switchAuthModal);
+
+// Fecth data
+fetch(dataPost)
+  .then(function (respond) {
+    return respond.json();
+  })
+  .then(function (data) {
+    var htmls = data.map(function (products) {
+      return products;
+    });
+    html = htmls.join('');
+    console.log(htmls);
+  });
