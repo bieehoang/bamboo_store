@@ -248,8 +248,25 @@ li:hover .menu-sub {
 }
 
 /* Products */
-.items-products {
-  background-color: #f3aa97;
-  height: 300px;
-  
+.products {
+  margin-top: 100px;
+}
+.item-products {
+}
+
+.item-background {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-origin: border-box;
+  height: 400px;
+}
+.item-name {
+  color: white;
+}
+.item-price {
+  color: white;
+}
+.item-price-old {
+}
+.item-price-current {
 }

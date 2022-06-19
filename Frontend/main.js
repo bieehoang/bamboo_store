@@ -67,7 +67,7 @@ const dataPost = 'http://localhost:3000/products';
 const productsShow = $('.item-products');
 
 //check
-console.log(productsShow);
+console.log();
 // func
 function openModalAuth() {
   modalFormAuth.classList.add('active');
@@ -100,19 +100,27 @@ fetch(dataPost)
     return respond.json();
   })
   .then(function (data) {
-    var htmls = data.map(function (products) {
-      console.log(products.image);
-      return `
-        <div class="item-background" style="background-image:url(${
-          products.image
-        })"></div>
-        <h4 class="item-name">${products.name}</h4>
-        <div class="item-price">
-            <span class="item-price-old">${[products.price]}</span>
-            <span class="item-price-current"></span>
-        </div>
-        `;
-    });
-    html = htmls.join('');
-    productsShow.innerHTML = html;
+    //console.log(data);
   });
+// const app = {
+//   render: function () {
+//     var htmls = data.map(function (products) {
+//       return `
+//           <div class="item-background" style="background-image:url('${
+//             products.image
+//           }')"></div>
+//           <h4 class="item-name">${products.name}</h4>
+//           <div class="item-price">
+//               <span class="item-price-old">${[products.price]}</span>
+//               <span class="item-price-current"></span>
+//           </div>
+//           `;
+//     });
+//     productsShow.innerHTML = htmls.join('');
+//   },
+//   start: function name() {
+//     this.render();
+//   },
+// };
+
+// app.start();
