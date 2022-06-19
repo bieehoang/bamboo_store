@@ -252,6 +252,9 @@ li:hover .menu-sub {
   margin-top: 100px;
 }
 .item-products {
+  color: white;
+  text-align: center;
+  font-size: 24px;
 }
 
 .item-background {
@@ -259,14 +262,14 @@ li:hover .menu-sub {
   background-size: contain;
   background-origin: border-box;
   height: 400px;
+  margin: auto;
 }
 .item-name {
-  color: white;
 }
 .item-price {
-  color: white;
 }
 .item-price-old {
+  text-decoration: line-through;
 }
 .item-price-current {
 }
