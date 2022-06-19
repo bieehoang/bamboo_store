@@ -2,42 +2,42 @@
   "products": [
     {
       "id": 1,
-      "name": "Hoddie",
+      "name": "LT Set Grey",
       "slug": "bamboo-top-hoddie",
-      "category": "Top Option",
-      "price": 200,
+      "category": "HOODIES",
+      "price": 420,
       "countInStock": 2,
       "brand": "Nike",
       "Rating": 4,
       "numbersRating": 10,
       "description": "High Quality",
-      "image": "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/6ff9c18399974edcbc82ae2b005e07db_9366/%C3%A1o-hoodie-khuy-b%E1%BA%A5m-always-original.jpg"
+      "image": "https://vietgangz.com/wp-content/uploads/2021/12/Vietgangz-Session0227-1-scaled-247x247.jpg"
     },
     {
       "id": 2,
-      "name": "Shirt",
+      "name": "Horse Shirt Black",
       "slug": "bamboo-top-shirt",
-      "category": "Top Option",
+      "category": "Men's T-Shirt",
       "price": 200,
       "countInStock": 2,
       "brand": "H&M",
       "Rating": 4,
       "numbersRating": 10,
       "description": "High Quality",
-      "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F17%2F4a%2F174a75bbe0e1af6dc97559c0a4456e00d9b63ca4.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_tshirtstanks_shortsleeve%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]"
+      "image": "https://vietgangz.com/wp-content/uploads/2022/05/45f0007c0651c60f9f40-247x247.jpg"
     },
     {
       "id": 3,
-      "name": "Tee",
+      "name": "Nike Sportswear",
       "slug": "bamboo-top-tee",
-      "category": "Top Option",
+      "category": "Men's T-Shirt",
       "price": 200,
       "countInStock": 2,
       "brand": "Nike",
       "Rating": 4,
       "numbersRating": 10,
       "description": "High Quality",
-      "image": "https://bizweb.dktcdn.net/100/287/440/products/ao-thun-nam-form-rong-tay-lo-den-c7f58f02-4b59-4d04-991c-c308308b0dc1.jpg?v=1620308472633"
+      "image": "https://vietgangz.com/wp-content/uploads/2022/04/278565125_307990454797050_7095504957551325823_n-247x247.jpg"
     },
     {
       "id": 4,
@@ -67,74 +67,74 @@
     },
     {
       "id": 6,
-      "name": "Jogger",
+      "name": "ManyB",
       "slug": "bamboo-bottom-jogger",
-      "category": "Bottom Option",
+      "category": "BOTTOM",
       "price": 200,
       "countInStock": 2,
       "brand": "Davies",
       "Rating": 4,
       "numbersRating": 10,
       "description": "High Quality",
-      "image": "https://saigonsneaker.com/wp-content/uploads/2020/11/Quan-Jogger-Nam-Nu-thun-tron-Logo-Den-6.jpg"
+      "image": "https://vietgangz.com/wp-content/uploads/2021/12/sau-247x247.jpg"
     },
     {
       "id": 7,
-      "name": "Pant",
+      "name": "DX11 Pants",
       "slug": "bamboo-bottom-pant",
-      "category": "Bottom Option",
+      "category": "BOTTOM",
       "price": 200,
       "countInStock": 2,
       "brand": "Davies",
       "Rating": 4,
       "numbersRating": 10,
       "description": "High Quality",
-      "image": "https://bizweb.dktcdn.net/thumb/1024x1024/100/309/942/products/60926834-1220983894727834-280525745988567040-n.jpg?v=1566566684030"
+      "image": "https://vietgangz.com/wp-content/uploads/2022/01/qua%CC%82%CC%80n-da2-247x247.jpg"
     },
     {
       "id": 8,
-      "name": "Short Pant",
+      "name": "Baseball 01",
       "slug": "bamboo-bottom-shortpant",
-      "category": "Bottom Option",
-      "price": 200,
+      "category": "BOTTOM",
+      "price": 365,
       "countInStock": 2,
-      "brand": "Davies",
+      "brand": "VietGangz",
       "Rating": 4,
       "numbersRating": 10,
       "description": "High Quality",
-      "image": "https://product.hstatic.net/200000321771/product/upload_fde798d263e24cb5a14b9292cb1b511e.jpg"
+      "image": "https://vietgangz.com/wp-content/uploads/2021/12/2-1-247x247.jpg"
     },
     {
       "id": 9,
       "name": "Ear Ring",
       "slug": "bamboo-accessary-earring",
-      "category": "Accessary Option",
-      "price": 200,
+      "category": "ACCESSORIES",
+      "price": 90,
       "countInStock": 2,
       "brand": "Davies",
       "Rating": 4,
       "numbersRating": 10,
       "description": "High Quality",
-      "image": "https://www.urban-street-shop.com/media/image/57/e4/9c/UC4068BK_pic2_600x600.jpg"
+      "image": "https://vietgangz.com/wp-content/uploads/2021/04/64a6fb32b6c2449c1dd3-scaled-247x247.jpg"
     },
     {
       "id": 10,
       "name": "Bracelet",
       "slug": "bamboo-accessary-bracelet",
-      "category": "Accessary Option",
-      "price": 200,
+      "category": "ACCESSORIES",
+      "price": 290,
       "countInStock": 2,
       "brand": "Davies",
       "Rating": 4,
       "numbersRating": 10,
       "description": "High Quality",
-      "image": "https://cf.shopee.vn/file/1748b25403ffaa2573bb1df831a87556"
+      "image": "https://vietgangz.com/wp-content/uploads/2021/12/DSC06811-scaled-247x247.jpg"
     },
     {
       "id": 11,
       "name": "Sock",
       "slug": "bamboo-accessary-sock",
-      "category": "Accessary Option",
+      "category": "ACCESSORIES",
       "price": 200,
       "countInStock": 2,
       "brand": "Davies",

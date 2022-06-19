@@ -100,7 +100,34 @@ fetch(dataPost)
     return respond.json();
   })
   .then(function (data) {
-    //console.log(data);
+    let dataSize = '';
+    data.map(function (values) {
+      dataSize += ` 
+          <div class="col l-3 m-6 c-6">
+            <div class="item-products">
+             <div class="infor">
+                <div class="item-background" style="background-image: url(${
+                  values.image
+                })"></div>
+                <div class="infor-products">
+                <p class="item-category">${values.category}</p>
+                <h4 class="item-name">${values.name}</h4>
+                <div class="item-price">
+                  <span class="item-price-current">${values.price}$</span>
+                  <br/>
+                  <span class="item-price-old">${values.price * 2}$</span>
+                </div>
+                </div>
+                <button class="btn buy-btn">Overview</button>
+                </div>
+                </div>
+            </div>
+  `;
+    });
+    $('#root-data-js').innerHTML = dataSize;
+  })
+  .catch(function () {
+    alert('Please Reload The Page');
   });
 // const app = {
 //   render: function () {
