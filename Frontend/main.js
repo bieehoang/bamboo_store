@@ -63,10 +63,11 @@ const switchAuthModalBtn = $('.auth-form__switch');
 const loginForm = $('.auth-form');
 const registerForm = $('.modal-register');
 const creatAccount = $('.js-creat-account');
-const dataPost = 'http://localhost:3000/songs';
+const dataPost = 'http://localhost:3000/products';
+const productsShow = $('.item-products');
 
 //check
-console.log(authFormOverleyAuth);
+console.log(productsShow);
 // func
 function openModalAuth() {
   modalFormAuth.classList.add('active');
@@ -100,8 +101,18 @@ fetch(dataPost)
   })
   .then(function (data) {
     var htmls = data.map(function (products) {
-      return products;
+      console.log(products.image);
+      return `
+        <div class="item-background" style="background-image:url(${
+          products.image
+        })"></div>
+        <h4 class="item-name">${products.name}</h4>
+        <div class="item-price">
+            <span class="item-price-old">${[products.price]}</span>
+            <span class="item-price-current"></span>
+        </div>
+        `;
     });
     html = htmls.join('');
-    console.log(htmls);
+    productsShow.innerHTML = html;
   });

@@ -247,7 +247,9 @@ li:hover .menu-sub {
   width: 100%;
 }
 
+/* Products */
 .items-products {
   background-color: #f3aa97;
   height: 300px;
+  
 }
