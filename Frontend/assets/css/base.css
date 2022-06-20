@@ -10,6 +10,7 @@
   --black-color: black;
   --text-color: #333;
   --font-12: 12px;
+  --mt: margin-top: 12px;
 }
 
 html {
@@ -212,8 +213,9 @@ li:hover .menu-sub {
   background-color: black;
 }
 
-/* Button style */
-.btn {
+/* Button style */ 
+/* Style 1 */
+.btn1 {
   font-family: 'Poppins', sans-serif;
   color: white;
   padding: 15px 30px;
@@ -229,7 +231,7 @@ li:hover .menu-sub {
   margin: 0 5px;
 }
 
-.btn:before {
+.btn1:before {
   content: '';
   height: 100%;
   width: 0;
@@ -242,8 +244,57 @@ li:hover .menu-sub {
   transition: width 0.25s ease-in;
 }
 
-.btn:hover::before {
+.btn1:hover::before {
   width: 100%;
+}
+
+/* Style 2 */
+
+.btn2 {
+   --color: #6a5af9;
+   font-family: "Poppins", sans-serif;
+   color: white;
+   padding: 15px 30px;
+   border-radius: 4px;
+   background-color: var(--color);
+   cursor: pointer;
+   font-weight: 500;
+   outline: none;
+   border: none;
+   font-size: 16px;
+   position: relative;
+   isolation: isolate;
+   overflow: hidden;
+   backface-visibility: hidden;
+}
+
+.btn2 span {
+   display: inline-block;
+   width: 100%;
+   height: 100%;
+   transition: all 0.2s linear;
+   backface-visibility: hidden;
+}
+
+.btn2:before {
+   content: "DETAIL";
+   height: 100%;
+   width: 100%;
+   position: absolute;
+   left: 0;
+   top: -100%;
+   transition: all 0.25s ease-in;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.btn2:hover:before {
+   top: 0;
+}
+
+.btn2:hover span {
+   transform: translateY(300%);
 }
 
 /* Products */
@@ -257,6 +308,11 @@ li:hover .menu-sub {
   text-align: center;
   padding-bottom: 50px;
 }
+
+.products-description {
+  margin-top: var(--font-12);
+}
+
 .item-products {
   color: var(--black-color);
   text-align: center;
@@ -265,6 +321,13 @@ li:hover .menu-sub {
 }
 
 .product {
+  opacity: 1;
+}
+
+.title-product{
+  margin-top: 24px;
+  color: white;
+  font-size: 32px;
 }
 
 .infor {
@@ -289,17 +352,23 @@ li:hover .menu-sub {
 }
 
 .item-name {
+  opacity: 1;
+  margin-top:10px;
 }
 
 .item-category {
   text-transform: uppercase;
   font-size: 16px;
+  margin-top:10px;
+
 }
 
 .item-price {
   display: flex;
   justify-content: center;
   font-size: 16px;
+  margin-top:10px;
+
 }
 
 .item-price-old {
@@ -308,11 +377,14 @@ li:hover .menu-sub {
 
 .item-price-current {
   margin-right: var(--font-12);
+  color: red;
 }
 
 .buy-btn {
-  --color: #3d3d3d;
-  color: black;
+  background-color: #333;
+  margin-top:10px;
+  border-radius: 2%;
+
 }
 
 .buy-btn:hover {

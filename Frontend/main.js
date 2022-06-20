@@ -100,11 +100,14 @@ fetch(dataPost)
     return respond.json();
   })
   .then(function (data) {
-    let dataPush = '';
+    let dataPushTop = '';
+    let dataPushBottom = '';
+    let dataPushAccessary = '';
+
     data.map(function (values, index) {
-      if (index < 4) {
-        dataPush += ` 
-            <div class="col l-3 m-6 c-6">
+      if (values.slug === 'bamboo-top') {
+        dataPushTop += ` 
+        <div class="col l-3 m-6 c-6">
               <div class="item-products">
                <div class="infor">
                   <div class="item-background" style="background-image: url(${
@@ -119,14 +122,67 @@ fetch(dataPost)
                     <span class="item-price-old">${values.price * 2}$</span>
                   </div>
                   </div>
-                  <button class="btn buy-btn">Overview</button>
+                  <button class="btn2 buy-btn"><span>${
+                    values.handle
+                  }</span></button>
+                  </div>
+                  </div>
+              </div>
+    `;
+      }
+      if (values.slug === 'bamboo-bottom') {
+        dataPushBottom += ` 
+        <div class="col l-4 m-6 c-6">
+              <div class="item-products">
+               <div class="infor">
+                  <div class="item-background" style="background-image: url(${
+                    values.image
+                  })"></div>
+                  <div class="infor-products">
+                  <p class="item-category">${values.category}</p>
+                  <h4 class="item-name">${values.name}</h4>
+                  <div class="item-price">
+                    <span class="item-price-current">${values.price}$</span>
+                    <br/>
+                    <span class="item-price-old">${values.price * 2}$</span>
+                  </div>
+                  </div>
+                  <button class="btn2 buy-btn"><span>${
+                    values.handle
+                  }</span></button>
+                  </div>
+                  </div>
+              </div>
+    `;
+      }
+      if (values.slug === 'bamboo-accessary') {
+        dataPushAccessary += ` 
+        <div class="col l-4 m-6 c-6">
+              <div class="item-products">
+               <div class="infor">
+                  <div class="item-background" style="background-image: url(${
+                    values.image
+                  })"></div>
+                  <div class="infor-products">
+                  <p class="item-category">${values.category}</p>
+                  <h4 class="item-name">${values.name}</h4>
+                  <div class="item-price">
+                    <span class="item-price-current">${values.price}$</span>
+                    <br/>
+                    <span class="item-price-old">${values.price * 2}$</span>
+                  </div>
+                  </div>
+                  <button class="btn2 buy-btn"><span>
+                  ${values.handle}</span></button>
                   </div>
                   </div>
               </div>
     `;
       }
     });
-    $('#root-data-js').innerHTML = dataPush;
+    $('#data-top-js').innerHTML = dataPushTop;
+    $('#data-bottom-js').innerHTML = dataPushBottom;
+    $('#data-accessary-js').innerHTML = dataPushAccessary;
   })
   .catch(function () {
     alert('Please Reload The Page');
