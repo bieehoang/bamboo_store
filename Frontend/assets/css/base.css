@@ -269,6 +269,7 @@ li:hover .menu-sub {
 
 .infor {
   background-color: #fff;
+  padding: 20px 0;
 }
 
 .item-background {
@@ -312,5 +313,9 @@ li:hover .menu-sub {
 .buy-btn {
   --color: #3d3d3d;
   color: black;
-  
+}
+
+.buy-btn:hover {
+  --color: #3d3d3d;
+  color: white;
 }
