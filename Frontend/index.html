@@ -1,288 +1,347 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/base.css">
-    <link rel="stylesheet" href="./assets/css/main.css">
-    <link rel="stylesheet" href="./assets/css/normalize.min.css">
-    <link rel="stylesheet" href="./assets/css/grid.css">
-    <link rel="stylesheet" href="./assets/css/modalform.css">
-    <link rel="stylesheet" href="./assets/icon/themify-icons-font/themify-icons/themify-icons.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;900&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/normalize.min.css" />
+    <link rel="stylesheet" href="./assets/css/grid.css" />
+    <link rel="stylesheet" href="./assets/css/modalform.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/icon/themify-icons-font/themify-icons/themify-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;900&display=swap"
+      rel="stylesheet"
+    />
     <title>BAMBOOINDEX</title>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-</head>
-<body>
+    <script
+      src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"
+      type="text/javascript"
+    ></script>
+  </head>
+  <body>
     <div class="grid">
-        <div class="main">  
-            <div class="header">
-                <div class="logo">
-                    <a href="#">
-                        <img class="logo-img" src="./assets/img/kisspng-logo-font-line-brand-angle-contacto-gangster-5b6ed6bbc71317.6890675315339905878154.jpg" alt="">
-                    </a>
+      <div class="main">
+        <div class="header">
+          <div class="logo">
+            <a href="#">
+              <img
+                class="logo-img"
+                src="./assets/img/kisspng-logo-font-line-brand-angle-contacto-gangster-5b6ed6bbc71317.6890675315339905878154.jpg"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="navbar">
+            <div class="grid wide">
+              <div class="menu" id="js-menu">
+                <div class="menu-right">
+                  <ul>
+                    <li class="items">
+                      <a href="#" class="items-home" name="home">Home</a>
+                    </li>
+                    <li class="items">
+                      <a href="#product" class="items-items">
+                        Items
+                        <i class="nav-icon ti-angle-down"></i>
+                      </a>
+                      <ul class="menu-sub" id="js-menu-sub">
+                        <li>
+                          <p class="first-head-products">Top</p>
+                          <ul class="menu-sub__top">
+                            <li>
+                              <a href="#"> Hoddies </a>
+                            </li>
+                            <li>
+                              <a href="#"> Shirt </a>
+                            </li>
+                            <li>
+                              <a href="#"> Tee </a>
+                            </li>
+                            <li>
+                              <a href="#"> Bandana </a>
+                            </li>
+                            <li>
+                              <a href="#"> Croptop </a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <p class="second-head-products">Bottom</p>
+                          <ul class="menu-sub__bottom">
+                            <li>
+                              <a href="#"> Jogger </a>
+                            </li>
+                            <li>
+                              <a href="#"> Pant </a>
+                            </li>
+                            <li>
+                              <a href="#"> Short Pant </a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <p class="third-head-products">Accessory</p>
+                          <ul class="menu-sub__accessary">
+                            <li>
+                              <a href="#"> Ear ring </a>
+                            </li>
+                            <li>
+                              <a href="#"> Bracelet </a>
+                            </li>
+                            <li>
+                              <a href="#"> Sock </a>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="items">
+                      <a href="#" class="items__info" name="about">About us</a>
+                    </li>
+                  </ul>
                 </div>
-                <div class="navbar">
-                    <div class="grid wide">
-                        <div class="menu" id="js-menu">
-                            <div class="menu-right">
-                                <ul>
-                                    <li class="items">
-                                        <a href="#" class="items-home" name="home">Home</a>
-                                    </li>
-                                    <li class="items">
-                                        <a href="#product" class="items-items">
-                                            Items
-                                            <i class="nav-icon ti-angle-down"></i>
-                                        </a>
-                                        <ul class="menu-sub" id="js-menu-sub">
-                                            <li>
-                                                <p class="first-head-products">Top</p>
-                                                <ul class="menu-sub__top">
-                                                    <li>
-                                                        <a href="#">
-                                                            Hoddies
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">
-                                                            Shirt
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">
-                                                            Tee
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">
-                                                            Bandana
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">
-                                                            Croptop
-                                                        </a>
-                                                    </li>
-                                                </ul> 
-                                            </li>
-                                            <li>
-                                                <p class="second-head-products">Bottom</p>
-                                                <ul class="menu-sub__bottom" >
-                                                    <li>
-                                                        <a href="#">
-                                                            Jogger
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">
-                                                            Pant
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">
-                                                            Short Pant
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <p class="third-head-products">Accessory</p>
-                                                    <ul class="menu-sub__accessary">
-                                                        <li>
-                                                            <a href="#">
-                                                                Ear ring
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#">
-                                                                Bracelet
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#">
-                                                                Sock
-                                                            </a>
-                                                        </li>
-                                                    </ul>    
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="items">
-                                        <a href="#" class="items__info" name="about">About us</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="menu-left">
-                                <ul>
-                                    <li class="items">
-                                        <a href="#" class="ti-search"></a>
-                                    </li>
-                                    <li class="items">
-                                        <a href="#" class="items-signin js-auth-btn">
-                                            Sign in
-                                        </a>
-                                    </li>
-                                    <li class="items">
-                                        <a href="#" class="items-support">Support</a>
-                                    </li>
-                                    <li class="items">
-                                        <a href="#" class="items-cash">
-                                            <i class="ti-shopping-cart-full"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                <div class="menu-left">
+                  <ul>
+                    <li class="items">
+                      <a href="#" class="ti-search"></a>
+                    </li>
+                    <li class="items">
+                      <a href="#" class="items-signin js-auth-btn"> Sign in </a>
+                    </li>
+                    <li class="items">
+                      <a href="#" class="items-support">Support</a>
+                    </li>
+                    <li class="items">
+                      <a href="#" class="items-cash">
+                        <i class="ti-shopping-cart-full"></i>
+                      </a>
+                    </li>
+                  </ul>
                 </div>
+              </div>
             </div>
-            <div class="container">
-                    <div class="img-main">
-                    </div>
-                    <div class="grid">
-                        <div class="grid wide">
-                            <div class="products">
-                                <div class="products-review">
-                                    <h2 class="products-header">PRODUCTS</h2>
-                                    <h3 class="products-description">
-                                        Save Up to 50%
-                                        Shop All Our New Markdowns
-                                    </h3>
-                                </div>
-                                <div class="product" id="product">
-                                    <h2 class="title-product">
-                                        IN TOP
-                                    </h2>
-                                    <div class="row" id="data-top-js">
-                                    </div>
-                                    <h2 class="title-product">
-                                        IN BOTTOM
-                                    </h2>
-                                    <div class="row" id="data-bottom-js">
-                                    </div>
-                                    <h2 class="title-product">
-                                        IN ACCESSARY
-                                    </h2>
-                                    <div class="row" id="data-accessary-js">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="root"></div>
-            <footer class="footer">
-            </footer>
+          </div>
         </div>
+        <div class="container">
+          <div class="img-main"></div>
+          <div class="grid">
+            <div class="grid wide">
+              <div class="products">
+                <div class="products-review">
+                  <h2 class="products-header">PRODUCTS</h2>
+                  <h3 class="products-description">
+                    Save Up to 50% Shop All Our New Markdowns
+                  </h3>
+                </div>
+                <div class="product" id="product">
+                  <h2 class="title-product">In Top</h2>
+                  <div class="row" id="data-top-js"></div>
+                  <h2 class="title-product">In Bottom</h2>
+                  <div class="row" id="data-bottom-js"></div>
+                  <h2 class="title-product">In Accessory</h2>
+                  <div class="row" id="data-accessary-js"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    
+    <footer class="footer">
+      <div class="grid">
+        <div class="grid wide">
+          <div class="footer-web">
+            <div class="row">
+              <div class="col l-3 m-3 c-6">
+                <div class="footer-social">
+                  <div class="social-head">Our Social network</div>
+                  <div class="logo-brand_social">
+                    <!-- <img src="./assets/img/kisspng-logo-font-line-brand-angle-contacto-gangster-5b6ed6bbc71317.6890675315339905878154.jpg" alt=""> -->
+                  </div>
+                  <div class="divier"></div>
+                  <div class="logo-social">
+                    <div class="logo-istagram">
+                      <img
+                        src="https://vietgangz.com/wp-content/uploads/2020/09/Instagram-icon-WHITE-800x800-2.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="logo-youtube">
+                      <img
+                        src="https://vietgangz.com/wp-content/uploads/2020/09/tai-xuong-1-1.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="logo-facebook">
+                      <img
+                        src="https://vietgangz.com/wp-content/uploads/2020/09/tai-xuong-2-1.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col l-3 m-3 c-6">
+                <div class="footer-social">
+                  <div class="social-head">Our Linkedln</div>
+                </div>
+                <div class="divier"></div>
+              </div>
+              <div class="col l-3 m-3 c-6">
+                <div class="footer-social">
+                  <div class="social-head">Our Adress</div>
+                </div>
+                <div class="divier"></div>
+              </div>
+              <div class="col l-3 m-3 c-6">
+                <div class="footer-social">
+                  <div class="social-head">About Us</div>
+                </div>
+                <div class="divier"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
     <!-- Form modal -->
     <div class="modal js-modal">
-        <div class="modal-overley js-modal-overley">
-           
-        </div>
-        <div class="modal-body">
-            <div class="modal-login">
-                <!-- Login Form -->
-                <div class="auth-form">
-                    <div class="auth-form__header">
-
-                        <div class="auth-form__title">Login</div>
-                        <span class="auth-form__switch">Register</span>
-                    </div>
-                    <div class="auth-form__form">
-                        <div class="auth-form__group">
-                            <p>User account or address email</p>
-                            <input type="text" name="" id="log-email" placeholder="   User account or address email">
-                        </div>
-                        <div class="auth-form__group">
-                            <p>Password</p>
-                            <input type="password" name="" id="log-pass" placeholder="    Password">
-                        </div>
-                    </div>
-                    <div class="auth-form__controls">
-                        <button class="btn1 btn-back">BACK</button>
-                        <button class="btn1 btn-primary">LOGIN</button>
-                    </div>
-                    <div class="auth-form__aside">
-                        <p class="auth-form__policy-text">
-                            <a href="#" class="auth-form__policy-link">I Forget Password</a> or
-                            <a href="#" class="auth-form__policy-link js-creat-account">I Don't Have Acount Yet</a> 
-                        </p>
-                    </div>
-                    <div class="auth-form__socials">
-                        <div class="btn1 btn-facebook">
-                            <a href="">
-                                <i class="btn-icon ti-facebook"></i>
-                                Connect with Facebook
-                            </a> 
-                        </div>
-                        <div class="btn1 btn-google">
-                            <a href="">
-                                <i class="btn-icon ti-google"></i>
-                               Connect with Google
-                            </a> 
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="modal-register">
-                    <!-- Register  Form --> 
-                        <div class="auth-form-register">
-                       <div class="auth-form__header">
-   
-                           <div class="auth-form__title">Register</div>
-                           <span class="auth-form__switch">Login</span>
-                       </div>
-                       <div class="auth-form__form">
-                           <div class="auth-form__group">
-                               <p>User account or address email</p>
-                               <input type="text" name="" id="register-email" placeholder="   Your email">
-                           </div>
-                           <div class="auth-form__group">
-                               <p>Password</p>
-                               <input type="password" name="" id="register-pass" placeholder="    Password">
-                           </div>
-                           <div class="auth-form__group">
-                               <p>Repeat your pasword again</p>
-                               <input type="password" name="" id="register-rp" placeholder="   Success your password">
-                           </div>
-                       </div>
-                       <div class="auth-form__aside">
-                           <p class="auth-form__policy-text">
-                               By the register our web, you allow our 
-                               <a href="" class="auth-form__policy-link">Service Rules</a> & 
-                               <a href="" class="auth-form__policy-link">Policy</a> 
-                           </p>
-                       </div>
-                       <div class="auth-form__controls">
-                           <button class="btn1 btn-back">BACK</button>
-                           <button class="btn1 btn-primary">REGISTER</button>
-                       </div>
-                       <div class="auth-form__socials"> 
-                           <div class="btn1 btn-facebook">
-                               <a href="">
-                                   <i class="btn-icon ti-facebook"></i>
-                                   Register with Facebook
-                               </a> 
-                           </div>
-                           <div class="btn1 btn-google">
-                               <a href="">
-                                   <i class="btn-icon ti-google"></i>
-                                  Register with Google
-                               </a> 
-                           </div>
-                       </div>
-   
-                   </div>
-                </div>
+      <div class="modal-overley js-modal-overley"></div>
+      <div class="modal-body">
+        <div class="modal-login">
+          <!-- Login Form -->
+          <div class="auth-form">
+            <div class="auth-form__header">
+              <div class="auth-form__title">Login</div>
+              <span class="auth-form__switch">Register</span>
             </div>
+            <div class="auth-form__form">
+              <div class="auth-form__group">
+                <p>User account or address email</p>
+                <input
+                  type="text"
+                  name=""
+                  id="log-email"
+                  placeholder="   User account or address email"
+                />
+              </div>
+              <div class="auth-form__group">
+                <p>Password</p>
+                <input
+                  type="password"
+                  name=""
+                  id="log-pass"
+                  placeholder="    Password"
+                />
+              </div>
+            </div>
+            <div class="auth-form__controls">
+              <button class="btn1 btn-back">BACK</button>
+              <button class="btn1 btn-primary">LOGIN</button>
+            </div>
+            <div class="auth-form__aside">
+              <p class="auth-form__policy-text">
+                <a href="#" class="auth-form__policy-link">I Forget Password</a>
+                or
+                <a href="#" class="auth-form__policy-link js-creat-account"
+                  >I Don't Have Acount Yet</a
+                >
+              </p>
+            </div>
+            <div class="auth-form__socials">
+              <div class="btn1 btn-facebook">
+                <a href="">
+                  <i class="btn-icon ti-facebook"></i>
+                  Connect with Facebook
+                </a>
+              </div>
+              <div class="btn1 btn-google">
+                <a href="">
+                  <i class="btn-icon ti-google"></i>
+                  Connect with Google
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-register">
+            <!-- Register  Form -->
+            <div class="auth-form-register">
+              <div class="auth-form__header">
+                <div class="auth-form__title">Register</div>
+                <span class="auth-form__switch">Login</span>
+              </div>
+              <div class="auth-form__form">
+                <div class="auth-form__group">
+                  <p>User account or address email</p>
+                  <input
+                    type="text"
+                    name=""
+                    id="register-email"
+                    placeholder="   Your email"
+                  />
+                </div>
+                <div class="auth-form__group">
+                  <p>Password</p>
+                  <input
+                    type="password"
+                    name=""
+                    id="register-pass"
+                    placeholder="    Password"
+                  />
+                </div>
+                <div class="auth-form__group">
+                  <p>Repeat your pasword again</p>
+                  <input
+                    type="password"
+                    name=""
+                    id="register-rp"
+                    placeholder="   Success your password"
+                  />
+                </div>
+              </div>
+              <div class="auth-form__aside">
+                <p class="auth-form__policy-text">
+                  By the register our web, you allow our
+                  <a href="" class="auth-form__policy-link">Service Rules</a> &
+                  <a href="" class="auth-form__policy-link">Policy</a>
+                </p>
+              </div>
+              <div class="auth-form__controls">
+                <button class="btn1 btn-back">BACK</button>
+                <button class="btn1 btn-primary">REGISTER</button>
+              </div>
+              <div class="auth-form__socials">
+                <div class="btn1 btn-facebook">
+                  <a href="">
+                    <i class="btn-icon ti-facebook"></i>
+                    Register with Facebook
+                  </a>
+                </div>
+                <div class="btn1 btn-google">
+                  <a href="">
+                    <i class="btn-icon ti-google"></i>
+                    Register with Google
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
     <script src="./main.js"></script>
-</body>
+  </body>
 </html>

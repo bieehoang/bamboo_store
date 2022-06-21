@@ -9,6 +9,7 @@
   --white-color: white;
   --black-color: black;
   --text-color: #333;
+  --main-text-color:#ffd154;
   --font-12: 12px;
   --mt: margin-top: 12px;
 }
@@ -208,12 +209,12 @@ li:hover .menu-sub {
 
 /* Slider */
 .img-main {
-  background-image: url(../img/patrolmanramseycounty1935-1635-7364-4013-1635169925.jpg);
+  background-image: url(https://vietgangz.com/wp-content/uploads/2020/10/95821448_912157855876773_3364977254303006720_o.jpg);
   background-repeat: no-repeat;
   background-size: contain;
   background-origin: border-box;
   width: 98%;
-  padding-bottom: 60%;
+  padding-top: 70%;
   position: relative;
   margin: 0 auto;
   background-color: black;
@@ -305,7 +306,6 @@ li:hover .menu-sub {
 
 /* Products */
 .products {
-  margin-top: 100px;
 }
 
 .products-review {
@@ -332,7 +332,9 @@ li:hover .menu-sub {
 
 .title-product{
   margin-top: 24px;
-  color: white;
+  color: var(--main-text-color);
+  text-transform: uppercase;
+  opacity: 0.8;
   font-size: 32px;
 }
 
@@ -348,6 +350,7 @@ li:hover .menu-sub {
   width: 100%;
   padding-top: 100%;
   cursor: pointer;
+  position: relative;
 }
 
 .item-background:hover {
@@ -387,16 +390,85 @@ li:hover .menu-sub {
 .item-price-current {
   margin-right: var(--font-12);
   color: red;
+  font-size: 18px;
 }
 
+
+.handle-product{
+  position: absolute;
+  margin: 16px;
+  font-size: 32px;
+  right: 0;
+  top: 0;
+}
+
+.change{
+  color: red;
+  display: block;
+}
+
+.love-icon {
+
+}
+
+.loved-icon{
+ display: none;
+}
 .buy-btn {
   background-color: #333;
   margin-top:10px;
   border-radius: 2%;
-
 }
 
 .buy-btn:hover {
   --color: #3d3d3d;
   color: white;
 }
+
+/* Footer */
+.footer{
+  background-color: var(--black-color);
+  padding-top: 100px;
+}
+
+.footer-web{
+  color: white;
+  text-align: center;
+}
+
+.social-head{
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.logo-social{
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.logo-social img:hover{
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+
+.divier{
+  height: 3px;
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 50%;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.logo-istagram img,
+.logo-youtube img,
+.logo-facebook img
+{
+  width: 30px;
+}
+
+
+

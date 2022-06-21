@@ -155,6 +155,20 @@
       "image": "https://vietgangz.com/wp-content/uploads/2021/12/2-1-247x247.jpg"
     },
     {
+      "id": 8,
+      "name": "Baseball 01",
+      "slug": "bamboo-bottom",
+      "category": "BOTTOM",
+      "price": 365,
+      "countInStock": 2,
+      "brand": "VietGangz",
+      "Rating": 4,
+      "handle":"CLICK TO SEE",
+      "numbersRating": 10,
+      "description": "High Quality",
+      "image": "https://vietgangz.com/wp-content/uploads/2021/12/2-1-247x247.jpg"
+    },
+    {
       "id": 9,
       "name": "Ear Ring",
       "slug": "bamboo-accessary",
@@ -181,6 +195,20 @@
       "handle":"CLICK TO SEE",
       "description": "High Quality",
       "image": "https://vietgangz.com/wp-content/uploads/2021/12/DSC06811-scaled-247x247.jpg"
+    },
+    {
+      "id": 11,
+      "name": "Sock",
+      "slug": "bamboo-accessary",
+      "category": "ACCESSORIES",
+      "price": 200,
+      "countInStock": 2,
+      "brand": "Davies",
+      "Rating": 4,
+      "numbersRating": 10,
+      "handle":"CLICK TO SEE",
+      "description": "High Quality",
+      "image": "https://cdn.cliqueinc.com/posts/286645/womens-nike-socks-286645-1586298363287-image.700x0c.jpg"
     },
     {
       "id": 11,

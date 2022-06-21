@@ -53,6 +53,7 @@
 
 const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
+document.get;
 
 // call
 const authBtn = $('.js-auth-btn');
@@ -65,7 +66,30 @@ const registerForm = $('.modal-register');
 const creatAccount = $('.js-creat-account');
 const dataPost = 'http://localhost:3000/products';
 const productsShow = $('.item-products');
+const touchIconLove = $('.handle-product');
+var month = 2;
 
+// switch (month) {
+//   case 1:
+//   case 3:
+//   case 5:
+//   case 7:
+//   case 8:
+//   case 10:
+//   case 12:
+//     console.log('31 ngày');
+//     break;
+//   case 2:
+//     // Coi như năm nay là năm nhuận
+//     console.log('Tháng có 29 ngày');
+//     break;
+//   case 4:
+//   case 6:
+//   case 9:
+//   case 11:
+//     console.log('Tháng có 30 ngày');
+//     break;
+// }
 //check
 console.log();
 // func
@@ -106,78 +130,77 @@ fetch(dataPost)
 
     data.map(function (values, index) {
       if (values.slug === 'bamboo-top') {
-        dataPushTop += ` 
-        <div class="col l-3 m-6 c-6">
-              <div class="item-products">
-               <div class="infor">
-                  <div class="item-background" style="background-image: url(${
-                    values.image
-                  })"></div>
-                  <div class="infor-products">
-                  <p class="item-category">${values.category}</p>
-                  <h4 class="item-name">${values.name}</h4>
-                  <div class="item-price">
-                    <span class="item-price-current">${values.price}$</span>
-                    <br/>
-                    <span class="item-price-old">${values.price * 2}$</span>
-                  </div>
-                  </div>
-                  <button class="btn2 buy-btn"><span>${
-                    values.handle
-                  }</span></button>
-                  </div>
-                  </div>
-              </div>
-    `;
+        dataPushTop += `
+          <div class="col l-3 m-6 c-6">
+                <div class="item-products">
+                 <div class="infor">
+                    <div class="item-background" style="background-image: url(${
+                      values.image
+                    })"></div>
+                    <div class="infor-products">
+                    <p class="item-category">${values.category}</p>
+                    <h4 class="item-name">${values.name}</h4>
+                    <div class="item-price">
+                      <span class="item-price-current">${values.price}$</span>
+                      <br/>
+                      <span class="item-price-old">${values.price * 2}$</span>
+                    </div>
+                    </div>
+                    <button class="btn2 buy-btn"><span>${
+                      values.handle
+                    }</span></button>
+                    </div>
+                    </div>
+                </div>
+      `;
       }
       if (values.slug === 'bamboo-bottom') {
-        dataPushBottom += ` 
-        <div class="col l-4 m-6 c-6">
-              <div class="item-products">
-               <div class="infor">
-                  <div class="item-background" style="background-image: url(${
-                    values.image
-                  })"></div>
-                  <div class="infor-products">
-                  <p class="item-category">${values.category}</p>
-                  <h4 class="item-name">${values.name}</h4>
-                  <div class="item-price">
-                    <span class="item-price-current">${values.price}$</span>
-                    <br/>
-                    <span class="item-price-old">${values.price * 2}$</span>
-                  </div>
-                  </div>
-                  <button class="btn2 buy-btn"><span>${
-                    values.handle
-                  }</span></button>
-                  </div>
-                  </div>
-              </div>
-    `;
+        dataPushBottom += `
+          <div class="col l-3 m-6 c-6">
+                <div class="item-products">
+                 <div class="infor">
+                    <div class="item-background" style="background-image: url(${
+                      values.image
+                    })"></div>
+                    <div class="infor-products">
+                    <p class="item-category">${values.category}</p>
+                    <h4 class="item-name">${values.name}</h4>
+                    <div class="item-price">
+                      <span class="item-price-current">${values.price}$</span>
+                      <br/>
+                      <span class="item-price-old">${values.price * 2}$</span>
+                    </div>
+                    </div>
+                    <button class="btn2 buy-btn"><span>${
+                      values.handle
+                    }</span></button>
+                    </div>
+                    </div>
+                </div>
+      `;
       }
       if (values.slug === 'bamboo-accessary') {
-        dataPushAccessary += ` 
-        <div class="col l-4 m-6 c-6">
-              <div class="item-products">
-               <div class="infor">
-                  <div class="item-background" style="background-image: url(${
-                    values.image
-                  })"></div>
-                  <div class="infor-products">
-                  <p class="item-category">${values.category}</p>
-                  <h4 class="item-name">${values.name}</h4>
-                  <div class="item-price">
-                    <span class="item-price-current">${values.price}$</span>
-                    <br/>
-                    <span class="item-price-old">${values.price * 2}$</span>
-                  </div>
-                  </div>
-                  <button class="btn2 buy-btn"><span>
-                  ${values.handle}</span></button>
-                  </div>
-                  </div>
-              </div>
-    `;
+        dataPushAccessary += `
+        <div class="col l-3 m-6 c-6">
+        <div class="item-products">
+         <div class="infor">
+            <div class="item-background" style="background-image: url(${
+              values.image
+            })"></div>
+            <div class="infor-products">
+            <p class="item-category">${values.category}</p>
+            <h4 class="item-name">${values.name}</h4>
+            <div class="item-price">
+              <span class="item-price-current">${values.price}$</span>
+              <br/>
+              <span class="item-price-old">${values.price * 2}$</span>
+            </div>
+            </div>
+            <button class="btn2 buy-btn"><span>${values.handle}</span></button>
+            </div>
+            </div>
+        </div>
+      `;
       }
     });
     $('#data-top-js').innerHTML = dataPushTop;
@@ -187,25 +210,3 @@ fetch(dataPost)
   .catch(function () {
     alert('Please Reload The Page');
   });
-// const app = {
-//   render: function () {
-//     var htmls = data.map(function (products) {
-//       return `
-//           <div class="item-background" style="background-image:url('${
-//             products.image
-//           }')"></div>
-//           <h4 class="item-name">${products.name}</h4>
-//           <div class="item-price">
-//               <span class="item-price-old">${[products.price]}</span>
-//               <span class="item-price-current"></span>
-//           </div>
-//           `;
-//     });
-//     productsShow.innerHTML = htmls.join('');
-//   },
-//   start: function name() {
-//     this.render();
-//   },
-// };
-
-// app.start();
