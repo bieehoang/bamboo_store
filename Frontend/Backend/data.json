@@ -11,7 +11,7 @@
       "Rating": 4,
       "numbersRating": 10,
       "description": "High Quality",
-      "handle":"CLICK TO SEE",
+      "handle": "CLICK TO SEE",
       "image": "https://vietgangz.com/wp-content/uploads/2021/12/Vietgangz-Session0227-1-scaled-247x247.jpg"
     },
     {
@@ -24,7 +24,7 @@
       "brand": "H&M",
       "Rating": 4,
       "numbersRating": 10,
-      "handle":"CLICK TO SEE",
+      "handle": "CLICK TO SEE",
       "description": "High Quality",
       "image": "https://vietgangz.com/wp-content/uploads/2022/05/45f0007c0651c60f9f40-247x247.jpg"
     },
@@ -38,7 +38,7 @@
       "brand": "Nike",
       "Rating": 4,
       "numbersRating": 10,
-      "handle":"CLICK TO SEE",
+      "handle": "CLICK TO SEE",
       "description": "High Quality",
       "image": "https://vietgangz.com/wp-content/uploads/2022/04/278565125_307990454797050_7095504957551325823_n-247x247.jpg"
     },
@@ -52,7 +52,7 @@
       "brand": "Davies",
       "Rating": 4,
       "numbersRating": 10,
-      "handle":"CLICK TO SEE",
+      "handle": "CLICK TO SEE",
       "description": "High Quality",
       "image": "https://www.urban-street-shop.com/media/image/57/e4/9c/UC4068BK_pic2_600x600.jpg"
     },
@@ -66,27 +66,27 @@
       "brand": "Nike",
       "Rating": 4,
       "numbersRating": 10,
-      "handle":"CLICK TO SEE",
+      "handle": "CLICK TO SEE",
       "description": "High Quality",
       "image": "https://lzd-img-global.slatic.net/g/p/3c5063e9e359d26150444ecd803c7c31.jpg_360x360q75.jpg_.webp"
     },
     {
       "id": 1,
-      "name": "LT Set Grey",
+      "name": "FLAME B",
       "slug": "bamboo-top",
       "category": "HOODIES",
-      "price": 420,
+      "price": 250,
       "countInStock": 2,
       "brand": "Nike",
       "Rating": 4,
       "numbersRating": 10,
-      "handle":"CLICK TO SEE",
+      "handle": "CLICK TO SEE",
       "description": "High Quality",
-      "image": "https://vietgangz.com/wp-content/uploads/2021/12/Vietgangz-Session0227-1-scaled-247x247.jpg"
+      "image": "https://vietgangz.com/wp-content/uploads/2022/05/675372b27b9fbbc1e28e-280x280.jpg"
     },
     {
       "id": 1,
-      "name": "LT Set Grey",
+      "name": "Varsity Vietgangz MC",
       "slug": "bamboo-top",
       "category": "HOODIES",
       "price": 420,
@@ -94,13 +94,13 @@
       "brand": "Nike",
       "Rating": 4,
       "numbersRating": 10,
-      "handle":"CLICK TO SEE",
+      "handle": "CLICK TO SEE",
       "description": "High Quality",
-      "image": "https://vietgangz.com/wp-content/uploads/2021/12/Vietgangz-Session0227-1-scaled-247x247.jpg"
+      "image": "https://vietgangz.com/wp-content/uploads/2022/01/2-1-280x280.jpg"
     },
     {
       "id": 1,
-      "name": "LT Set Grey",
+      "name": "Jacket RN",
       "slug": "bamboo-top",
       "category": "HOODIES",
       "price": 420,
@@ -108,9 +108,9 @@
       "brand": "Nike",
       "Rating": 4,
       "numbersRating": 10,
-      "handle":"CLICK TO SEE",
+      "handle": "CLICK TO SEE",
       "description": "High Quality",
-      "image": "https://vietgangz.com/wp-content/uploads/2021/12/Vietgangz-Session0227-1-scaled-247x247.jpg"
+      "image": "https://vietgangz.com/wp-content/uploads/2022/01/2222-280x280.jpg"
     },
     {
       "id": 6,
@@ -122,7 +122,7 @@
       "brand": "Davies",
       "Rating": 4,
       "numbersRating": 10,
-      "handle":"CLICK TO SEE",
+      "handle": "CLICK TO SEE",
       "description": "High Quality",
       "image": "https://vietgangz.com/wp-content/uploads/2021/12/sau-247x247.jpg"
     },
@@ -136,7 +136,7 @@
       "brand": "Davies",
       "Rating": 4,
       "numbersRating": 10,
-      "handle":"CLICK TO SEE",
+      "handle": "CLICK TO SEE",
       "description": "High Quality",
       "image": "https://vietgangz.com/wp-content/uploads/2022/01/qua%CC%82%CC%80n-da2-247x247.jpg"
     },
@@ -149,24 +149,24 @@
       "countInStock": 2,
       "brand": "VietGangz",
       "Rating": 4,
-      "handle":"CLICK TO SEE",
+      "handle": "CLICK TO SEE",
       "numbersRating": 10,
       "description": "High Quality",
       "image": "https://vietgangz.com/wp-content/uploads/2021/12/2-1-247x247.jpg"
     },
     {
       "id": 8,
-      "name": "Baseball 01",
+      "name": "Black Velvet Pants",
       "slug": "bamboo-bottom",
       "category": "BOTTOM",
       "price": 365,
       "countInStock": 2,
       "brand": "VietGangz",
       "Rating": 4,
-      "handle":"CLICK TO SEE",
+      "handle": "CLICK TO SEE",
       "numbersRating": 10,
       "description": "High Quality",
-      "image": "https://vietgangz.com/wp-content/uploads/2021/12/2-1-247x247.jpg"
+      "image": "https://vietgangz.com/wp-content/uploads/2020/12/velvet-pants3-280x280.jpg"
     },
     {
       "id": 9,
@@ -178,13 +178,13 @@
       "brand": "Davies",
       "Rating": 4,
       "numbersRating": 10,
-      "handle":"CLICK TO SEE",
+      "handle": "CLICK TO SEE",
       "description": "High Quality",
       "image": "https://vietgangz.com/wp-content/uploads/2021/04/64a6fb32b6c2449c1dd3-scaled-247x247.jpg"
     },
     {
       "id": 10,
-      "name": "Bracelet",
+      "name": "Vietgangz Bracelet",
       "slug": "bamboo-accessary",
       "category": "ACCESSORIES",
       "price": 290,
@@ -192,13 +192,13 @@
       "brand": "Davies",
       "Rating": 4,
       "numbersRating": 10,
-      "handle":"CLICK TO SEE",
+      "handle": "CLICK TO SEE",
       "description": "High Quality",
-      "image": "https://vietgangz.com/wp-content/uploads/2021/12/DSC06811-scaled-247x247.jpg"
+      "image": "https://vietgangz.com/wp-content/uploads/2020/09/IMG_5861-scaled-1-280x280.jpg"
     },
     {
       "id": 11,
-      "name": "Sock",
+      "name": "Vietgangz Carpet",
       "slug": "bamboo-accessary",
       "category": "ACCESSORIES",
       "price": 200,
@@ -206,23 +206,23 @@
       "brand": "Davies",
       "Rating": 4,
       "numbersRating": 10,
-      "handle":"CLICK TO SEE",
+      "handle": "CLICK TO SEE",
       "description": "High Quality",
-      "image": "https://cdn.cliqueinc.com/posts/286645/womens-nike-socks-286645-1586298363287-image.700x0c.jpg"
+      "image": "https://vietgangz.com/wp-content/uploads/2021/06/basic-280x280.jpg"
     },
     {
       "id": 11,
-      "name": "Sock",
+      "name": "Logo Pins",
       "slug": "bamboo-accessary",
       "category": "ACCESSORIES",
-      "price": 200,
+      "price": 10,
       "countInStock": 2,
       "brand": "Davies",
       "Rating": 4,
       "numbersRating": 10,
-      "handle":"CLICK TO SEE",
+      "handle": "CLICK TO SEE",
       "description": "High Quality",
-      "image": "https://cdn.cliqueinc.com/posts/286645/womens-nike-socks-286645-1586298363287-image.700x0c.jpg"
+      "image": "https://vietgangz.com/wp-content/uploads/2020/10/pin3-280x280.jpg"
     }
   ]
 }

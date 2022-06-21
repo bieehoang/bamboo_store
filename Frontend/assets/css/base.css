@@ -258,7 +258,7 @@ li:hover .menu-sub {
 /* Style 2 */
 
 .btn2 {
-   --color: #6a5af9;
+   --color: #ffd154;
    font-family: "Poppins", sans-serif;
    color: white;
    padding: 15px 30px;
@@ -402,18 +402,6 @@ li:hover .menu-sub {
   top: 0;
 }
 
-.change{
-  color: red;
-  display: block;
-}
-
-.love-icon {
-
-}
-
-.loved-icon{
- display: none;
-}
 .buy-btn {
   background-color: #333;
   margin-top:10px;
@@ -422,7 +410,7 @@ li:hover .menu-sub {
 
 .buy-btn:hover {
   --color: #3d3d3d;
-  color: white;
+  color: var(--main-text-color);
 }
 
 /* Footer */
@@ -442,14 +430,14 @@ li:hover .menu-sub {
   text-transform: uppercase;
 }
 
-.logo-social{
+.footer-social-bottom{
   color: white;
   display: flex;
   justify-content: space-around;
   margin-top: 50px;
 }
 
-.logo-social img:hover{
+.footer-social-bottom img:hover{
   opacity: 0.8;
   cursor: pointer;
 }
@@ -470,5 +458,36 @@ li:hover .menu-sub {
   width: 30px;
 }
 
+/* Footer row 2 */
 
+.footer-adress{
+  font-size: 26px;
+}
+
+
+.adress-header{
+  margin: 50px 0 12px 0;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.adress-detail{
+  font-size: 22px;
+  line-height: 40px;
+}
+
+.adress-detail a{
+  text-decoration: none;
+  color: var(--main-text-color);
+}
+
+.adress-detail a:hover{
+  opacity: 0.3;
+}
+
+/* Footer row 3 */
+
+.footer-infor img{
+  width: 60%;
+}
 
