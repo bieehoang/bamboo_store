@@ -4,7 +4,18 @@
 # BAMBOO_STORE
 ## A web store build for workshop, a store of a fashion brand. 
 >To see it you can copy the link I wrote here and paste in any browsers you are using.
-
+>
+## Getting Started
+> you can clone the repository by using the command below and run the "npm install" command to install the necessary tools
+> Link project: **https://github.com/Qiese/bamboo_store** 
+> ### Setup:
+```
+git clone https://github.com/Qiese/bamboo_store
+**#choose to directory project**
+npm install
+cd Backend
+npm start
+```
 ## PREVIEW
 _Published at_ **https://qiese.github.io/bamboo_store/**
 >
