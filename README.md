@@ -7,7 +7,7 @@
 >
 ## Getting Started
 > you can clone the repository by using the command below and run the "npm install" command to install the necessary tools
-> Link project: [Here](https://qiese.github.io/bamboo_store/)
+> Link project: ** https://github.com/Qiese/bamboo_store.git ** 
 > ### Setup:
 ```
 git clone https://github.com/Qiese/bamboo_store
@@ -17,7 +17,7 @@ cd Backend
 npm start
 ```
 ## PREVIEW
-_Published at_ **https://qiese.github.io/bamboo_store/**
+### Published at [Here](https://qiese.github.io/bamboo_store/)
 >
 >*Position**: Developer, Designer, Tester..
 >
